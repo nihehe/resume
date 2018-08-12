@@ -1,0 +1,594 @@
+@import url(base.css);
+/*头部开始*/
+header{
+    width: 100%;
+    height: 50px;
+    background: #262b37;
+}
+header main{
+    height: 100%;
+    margin:0 auto;
+}
+header main ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header main ul li{
+    padding:0 18px;
+    font-size: 16px;
+    color: #fff;
+}
+header main ul li a{
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+a:focus, a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+/*头部结束*/
+/*图片开始*/
+.nav{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.25);
+}
+.picture{
+    width: 100%;
+    height: 100%;
+    background: url("../img/resume.jpg") no-repeat center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+.where{
+    width: 50%;
+    height: 33%;
+    border: 1px solid #fff;
+    padding: 10px 1px;
+}
+.name{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-family: "楷体";
+    color: #fff;
+}
+.school{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-family: "楷体";
+    color: #fff;
+}
+.bottom{
+    width: 42px;
+    height:42px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+    box-shadow: 0 0 15px 4px rgba(255,255,255,0.3);
+    animation: bottom 2s infinite;
+}
+@keyframes bottom {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(6px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    70%{
+        transform: translateY(6px);
+    }
+    90%{
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*图片结束*/
+/*基本信息开始*/
+.information{
+    height: 580px;
+    background: #79bcea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information .inform{
+    font-size: 40px;
+    color: #fff;
+}
+.information .content{
+    font-size: 18px;
+    color: #fff;
+    padding-left:10px;
+}
+.information li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.information li img{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+}
+/*基本信息结束*/
+/*专业技能开始*/
+.shills{
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.know{
+    height: 40px;
+    font-size: 40px;
+    color: #43c2eb;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.study{
+    height: 16px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+    line-height: 16px;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.can{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #79bcea;
+    text-align: center;
+    line-height: 180px;
+    font-size: 30px;
+    color: #79bcea;
+}
+/*专业技能结束*/
+/*照片集开始*/
+.photo{
+    background: #79bcea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.works{
+    height: 40px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photo li {
+    padding:20px 20px 20px 40px;
+}
+.photo .pad{
+    padding: 110px 20px 0 40px;
+}
+/*照片集结束*/
+/*联系我开始*/
+.call{
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.know-way{
+    font-size: 30px;
+    color: #79bcea;
+    line-height: 46px;
+}
+.tel{
+    font-size: 20px;
+    color: #79bcea;
+    line-height: 26px;
+}
+.e-mail{
+    font-size: 20px;
+    color: #79bcea;
+    line-height: 40px;
+}
+.icon-dianhua,.icon-youxiang{
+    font-size: 22px;
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+.qq,.weixin,.weibo{
+    font-size: 50px;
+    padding: 0 20px;
+}
+.btn-group{
+    margin-top: 20px;
+}
+/*联系我结束*/
+@media screen and (max-width: 768px) {
+    header main{
+        height: 100%;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   header main .home{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        color: #fff;
+    }
+    header main .home a{
+        display: block;
+        font-size: 16px;
+        color: #fff;
+    }
+    .icon-caidan{
+        font-size: 18px;
+        color: #fff;
+    }
+    .whome{
+        display: none;
+    }
+    .nav {
+        height: 290px;
+    }
+    .information {
+        height: 640px;
+    }
+    .information .inform{
+        font-size: 22px;
+        color: #fff;
+    }
+    .information .content{
+        font-size: 14px;
+        color: #fff;
+        padding-left:10px;
+    }
+    .name{
+        line-height: 2;
+        font-size: 18px;
+    }
+    .school{
+        font-size: 18px;
+    }
+    .shills {
+        height: 1560px;
+    }
+    .marg{
+        margin-top: 100px;
+    }
+    .shills li{
+        padding: 20px 50px;
+    }
+    .can{
+        margin: 0 auto;
+    }
+    .photo{
+        height: 2000px;
+    }
+    .photo a{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo img{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo li {
+        padding:20px;
+        margin: 0 auto;
+    }
+    .photo .pad{
+        padding: 20px;
+    }
+    .photo .padd{
+        padding: 120px 20px 0 20px;
+    }
+    .gain{
+        margin: 0 auto;
+    }
+    .call{
+        height: 630px;
+    }
+    .way{
+        height: 50%;
+    }
+    .others{
+        height: 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    header main{
+        height: 100%;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header main .home{
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        color: #fff;
+    }
+    header main .home a{
+        display: block;
+        font-size: 16px;
+        color: #fff;
+    }
+    .icon-caidan{
+        font-size: 18px;
+        color: #fff;
+    }
+    .whome{
+        display: none;
+    }
+    .nav {
+        height: 330px;
+    }
+    .name{
+        line-height: 2.5;
+        font-size: 24px;
+    }
+    .school{
+        line-height: 2;
+        font-size: 24px;
+    }
+    .shills {
+        height: 620px;
+    }
+    .mar{
+        margin-top: 110px;
+    }
+    .shills li{
+        padding: 20px 30px;
+    }
+    .photo{
+        height: 560px;
+    }
+    .photo a{
+        display: block;
+        width:170px;
+        height: 170px;
+    }
+    .photo img{
+        display: block;
+        width:170px;
+        height: 170px;
+    }
+    .photo li {
+        padding:20px 10px;
+    }
+    .photo .pad{
+        padding: 100px 20px 0 10px;
+    }
+    .call{
+        height: 630px;
+    }
+    .way{
+        height: 50%;
+    }
+    .others{
+        height: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    header main{
+        height: 100%;
+        margin:0 auto;
+    }
+    header main .whome{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    header main .whome li{
+        padding:0 18px;
+        font-size: 16px;
+        color: #fff;
+    }
+    header main .whome li a{
+        display: block;
+        font-size: 16px;
+        color: #fff;
+    }
+    a:focus, a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    header main .home{
+        display: none;
+    }
+    .whome{
+        display: block;
+    }
+    .nav {
+        height: 420px;
+    }
+    .name{
+        line-height: 2;
+        font-size: 32px;
+    }
+    .school{
+        line-height: 1.5;
+        font-size: 32px;
+    }
+    .shills {
+        height: 620px;
+    }
+    .mar{
+        margin-top: 110px;
+    }
+    .shills li{
+        padding: 20px 70px;
+    }
+    .photo{
+        height: 580px;
+    }
+    .photo a{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo img{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo li {
+        padding:20px 20px;
+    }
+    .photo .pad{
+        padding: 110px 20px 0 20px;
+    }
+    .call{
+        height: 460px;
+    }
+    .way{
+        height: 33%;
+        width:40%;
+    }
+    .others{
+        width:60%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header main{
+        height: 100%;
+        margin:0 auto;
+    }
+    header main .whome{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    header main .whome li{
+        padding:0 18px;
+        font-size: 16px;
+        color: #fff;
+    }
+    header main .whome li a{
+        display: block;
+        font-size: 16px;
+        color: #fff;
+    }
+    a:focus, a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+    header main .home{
+        display: none;
+    }
+    .whome{
+        display: block;
+    }
+    .nav {
+        height: 560px;
+    }
+    .picture{
+        background-size: 100% 100%;
+    }
+    .name{
+        line-height: 1.8;
+        font-size: 40px;
+    }
+    .school{
+        line-height: 1.8;
+        font-size: 40px;
+    }
+    .shills {
+        height: 620px;
+    }
+    .mar{
+        margin-top: 110px;
+    }
+    .shills li{
+        padding: 20px 70px;
+    }
+    .photo{
+        height: 580px;
+    }
+    .photo li {
+        padding:20px 20px 20px 40px;
+    }
+    .photo a{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo img{
+        display: block;
+        width:200px;
+        height: 200px;
+    }
+    .photo .pad{
+        padding: 110px 20px 0 40px;
+    }
+    .call{
+        height: 460px;
+    }
+    .way{
+        height: 33%;
+        width:33%;
+    }
+    .others{
+        width:66%;
+    }
+}
